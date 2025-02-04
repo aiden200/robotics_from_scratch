@@ -45,6 +45,7 @@ This project is a self-imposed challenge to learn **robotics, reinforcement lear
 - [Berkeley Humanoid Traning Code](https://github.com/HybridRobotics/isaac_berkeley_humanoid)
 - [Eurekaverse](https://eureka-research.github.io/eurekaverse/)
 - [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](https://arxiv.org/pdf/2109.11978)
+- [Giving continous values in deep learning](https://arxiv.org/pdf/1509.02971)
 
 
 ### 🛠️ Tools & Software
