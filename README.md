@@ -49,6 +49,7 @@ This project is a self-imposed challenge to learn **robotics, reinforcement lear
 - [ ] [An Introduction to Robot Learning and Isaac Lab]([ ] https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-36+V1)
 - [ ] [Transferring Robot Learning Policies From Simulation [ ] to Reality](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-28+V1)
 - [ ] [Introduction to Robotic Simulations in Isaac Sim ([ ] Not available yet)](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-03+V1)
+- [ ] [Huggingface RL course](https://huggingface.co/learn/deep-rl-course/)
 
 
 
