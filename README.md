@@ -82,6 +82,7 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 - [ ] [Robotics 101](https://www.ubicoders.com/courses/robotics101?kcid=olcewrxmvgmunfiyvlwobogxxuximlvj?utm_soure=1)
 - [ ] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
 - [x] [CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING](https://arxiv.org/pdf/1509.02971)
+- [x] [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)
 
 ## 🏆 Challenges & Next Steps
 
