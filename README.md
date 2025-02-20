@@ -39,7 +39,8 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 | Day 3 | **Intro to Robotics**: Compound Transformations.<br>[Full Notes](daily_progress/day3.md)                                                                                                          |
 | Day 4 | **Intro to Robotics**: Z-Y-X Euler Angles & Different ways to represent rotation Matrices<br>[Full Notes](daily_progress/day4.md)                                                                 |
 | Day5  | **PAPER:** Continuous Control with Deep Reinforcement Learning<br>**Intro to Robotics**: Rotation Matrices Continued, Notation, Computational Constraints<br>[Full Notes](daily_progress/day5.md) |
-| Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 1<br>**Intro to Robotics**: Relating frames to each other<br>[Full Notes](daily_progress/day6.md)                                       |
+| Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 1<br>**Intro to Robotics**: Relating frames to each other pt 1<br>[Full Notes](daily_progress/day6.md)                                  |
+| Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 2<br>**Intro to Robotics**: Relating frames to each other pt 2<br>[Full Notes](daily_progress/day7.md)                                  |
 
 ## 📂 Project Structure
 
