@@ -8,6 +8,11 @@
 - **Relating frames to each other**
   - Different examples
   - Breaking the problem down in robotics
+- **Paper Implementation: PPO pt 1**
+  - Implemented Configs and actor
+  - Supports discrete and continous action spaces
+  - Supports Raw sensor data or 2D image data
+  - Code located in [here](../code/models/ppo.py)
 
 ### **Notes**
 
