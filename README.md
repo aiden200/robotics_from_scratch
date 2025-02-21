@@ -40,7 +40,7 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 | Day 4 | **Intro to Robotics**: Z-Y-X Euler Angles & Different ways to represent rotation Matrices<br>[Full Notes](daily_progress/day4.md)                                                                 |
 | Day5  | **PAPER:** Continuous Control with Deep Reinforcement Learning<br>**Intro to Robotics**: Rotation Matrices Continued, Notation, Computational Constraints<br>[Full Notes](daily_progress/day5.md) |
 | Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 1<br>**Intro to Robotics**: Relating frames to each other pt 1<br>[Full Notes](daily_progress/day6.md)                                  |
-| Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 2<br>**Intro to Robotics**: Relating frames to each other pt 2<br>[Full Notes](daily_progress/day7.md)                                  |
+| Day7  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 2<br>**Code Implementation**: [PPO, part 1](code/models/ppo.py) -> Actor & Config<br>**Intro to Robotics**: Relating frames to each other pt 2<br>[Full Notes](daily_progress/day7.md)                                  |
 
 ## 📂 Project Structure
 
