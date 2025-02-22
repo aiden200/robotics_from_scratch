@@ -66,12 +66,16 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 
 ### Tutorials I want to go through
 
+- [x] [Continous Control with Deep Reinforcement Learning](https://arxiv.org/pdf/1509.02971)
+- [x] [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)
+- [x] [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236)
+- [x] [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](https://concept-graphs.github.io/assets/pdf/2023-ConceptGraphs.pdf)
+- [x] [sentdex series](https://www.youtube.com/watch?v=phTnbmXM06g&list=PLQVvvaa0QuDenVbxP4LXYZoGbjfgP-Y5i&index=1)
 - [ ] [DeepMind’s RL for Robotics](https://deepmind.com/research/highlighted-research)
 - [ ] [Sim2Real Transfer in Robotics](https://arxiv.org/abs/1806.06752)
 - [ ] [NVIDIA’s Issac Lab](https://developer.nvidia.com/omniverse)
 - [ ] [Visual and LIDAR based SLAM with ROS using Bittle and Raspberry Pi](https://www.youtube.com/watch?v=uXpQUIF_Jyk&list=PL5efXgSvwk9X8wQuiI_fomlSznZc-jShC)
 - [ ] [Arduino Machine Learning Tutorial: Introduction to TinyML with Wio Terminal](https://www.youtube.com/watch?v=iCmlKyAp8eQ&list=PL5efXgSvwk9UCtJ6JKTyWAccSVfTXSlA3)
-- [x] [sentdex series](https://www.youtube.com/watch?v=phTnbmXM06g&list=PLQVvvaa0QuDenVbxP4LXYZoGbjfgP-Y5i&index=1)
 - [ ] [NVIDIA Isaac Gym & RL](https://developer.nvidia.com/isaac-gym)
 - [ ] [Berkeley Humanoid Traning Code](https://github.com/HybridRobotics/isaac_berkeley_humanoid)
 - [ ] [Eurekaverse](https://eureka-research.github.io/eurekaverse/)
@@ -83,9 +87,6 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 - [ ] [Huggingface RL course](https://huggingface.co/learn/deep-rl-course/)
 - [ ] [Robotics 101](https://www.ubicoders.com/courses/robotics101?kcid=olcewrxmvgmunfiyvlwobogxxuximlvj?utm_soure=1)
 - [ ] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
-- [x] [CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING](https://arxiv.org/pdf/1509.02971)
-- [x] [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)
-- [x] [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236)
 
 ## 🏆 Challenges & Next Steps
 
