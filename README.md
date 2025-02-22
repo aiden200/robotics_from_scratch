@@ -32,15 +32,16 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 
 ### Project Progress by Day
 
-| Day   | Notes & Summaries                                                                                                                                                                                 |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Day 1 | **Intro to Robotics**: Basic robotic definitions.<br>[Full Notes](daily_progress/day1.md)                                                                                                         |
-| Day 2 | **Intro to Robotics**: Basic robotic definitions and common notations.<br>[Full Notes](daily_progress/day2.md)                                                                                    |
-| Day 3 | **Intro to Robotics**: Compound Transformations.<br>[Full Notes](daily_progress/day3.md)                                                                                                          |
-| Day 4 | **Intro to Robotics**: Z-Y-X Euler Angles & Different ways to represent rotation Matrices<br>[Full Notes](daily_progress/day4.md)                                                                 |
-| Day5  | **PAPER:** Continuous Control with Deep Reinforcement Learning<br>**Intro to Robotics**: Rotation Matrices Continued, Notation, Computational Constraints<br>[Full Notes](daily_progress/day5.md) |
-| Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 1<br>**Intro to Robotics**: Relating frames to each other pt 1<br>[Full Notes](daily_progress/day6.md)                                  |
-| Day7  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 2<br>**Code Implementation**: [PPO, part 1](code/models/ppo.py) -> Actor & Config<br>**Intro to Robotics**: Relating frames to each other pt 2<br>[Full Notes](daily_progress/day7.md)                                  |
+| Day   | Notes & Summaries                                                                                                                                                                                                                                |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Day 1 | **Intro to Robotics**: Basic robotic definitions.<br>[Full Notes](daily_progress/day1.md)                                                                                                                                                        |
+| Day 2 | **Intro to Robotics**: Basic robotic definitions and common notations.<br>[Full Notes](daily_progress/day2.md)                                                                                                                                   |
+| Day 3 | **Intro to Robotics**: Compound Transformations.<br>[Full Notes](daily_progress/day3.md)                                                                                                                                                         |
+| Day 4 | **Intro to Robotics**: Z-Y-X Euler Angles & Different ways to represent rotation Matrices<br>[Full Notes](daily_progress/day4.md)                                                                                                                |
+| Day5  | **PAPER:** Continuous Control with Deep Reinforcement Learning<br>**Intro to Robotics**: Rotation Matrices Continued, Notation, Computational Constraints<br>[Full Notes](daily_progress/day5.md)                                                |
+| Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 1<br>**Intro to Robotics**: Relating frames to each other pt 1<br>[Full Notes](daily_progress/day6.md)                                                                                 |
+| Day7  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 2<br>**Code Implementation**: [PPO, part 1](code/models/ppo.py) -> Actor & Config<br>**Intro to Robotics**: Relating frames to each other pt 2<br>[Full Notes](daily_progress/day7.md) |
+| Day8  | **PAPER:** Human-level control through deep reinforcement learning<br>**Code Implementation**: [PPO, part 2](code/models/ppo.py) -> Critic, Cippled Loss, KL divergence coefficient, Action value <br>[Full Notes](daily_progress/day8.md)       |
 
 ## 📂 Project Structure
 
@@ -84,6 +85,7 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 - [ ] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
 - [x] [CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING](https://arxiv.org/pdf/1509.02971)
 - [x] [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)
+- [x] [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236)
 
 ## 🏆 Challenges & Next Steps
 
