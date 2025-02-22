@@ -1,4 +1,4 @@
-# Robotics Learning Challenge: Teaching a Robot to Walk from scratch
+# 100 Days of Robotics Learning Challenge: Teaching a Robot to Walk from scratch
 
 ## 🚀 Overview
 
@@ -41,7 +41,7 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 | Day5  | **PAPER:** Continuous Control with Deep Reinforcement Learning<br>**Intro to Robotics**: Rotation Matrices Continued, Notation, Computational Constraints<br>[Full Notes](daily_progress/day5.md)                                                |
 | Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 1<br>**Intro to Robotics**: Relating frames to each other pt 1<br>[Full Notes](daily_progress/day6.md)                                                                                 |
 | Day7  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 2<br>**Code Implementation**: [PPO, part 1](code/models/ppo.py) -> Actor & Config<br>**Intro to Robotics**: Relating frames to each other pt 2<br>[Full Notes](daily_progress/day7.md) |
-| Day8  | **PAPER:** Human-level control through deep reinforcement learning<br>**Code Implementation**: [PPO, part 2](code/models/ppo.py) -> Critic, Cippled Loss, KL divergence coefficient, Action value <br>[Full Notes](daily_progress/day8.md)       |
+| Day8  | **PAPER:** Human-level control through deep reinforcement learning<br>**Code Implementation**: [PPO, part 2](code/models/ppo.py) -> Critic, Clippled Loss, KL divergence coefficient, Action value <br>[Full Notes](daily_progress/day8.md)       |
 
 ## 📂 Project Structure
 
