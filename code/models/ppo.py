@@ -257,21 +257,68 @@ class PPO(nn.Module):
         self.epochs = self.config.epochs
         self.actor = PPOActor(self.config).to(self.config.device)
         self.critic = PPOCritic(self.config).to(self.config.device)
+        self.horizon = self.config.horizon
+        self.gae_value = self.config.gae_parameter
+        self.discount = self.config.discount_value
         self.env = env
+        self.c1 = self.config.c1
+        self.c2 = self.config.c2
         
         if self.config.loss_type == "clipped":
-            self.loss = PPOClippedLoss(self.config, self.critic, self.env)
+            self.loss_surrogate = PPOClippedLoss(self.config, self.critic, self.env)
         elif self.config.loss_type == "normal":
-            self.loss = PPOLossNoPenalize(self.config)
+            self.loss_surrogate = PPOLossNoPenalize(self.config)
         elif self.config.loss_type == "kl_penalized":
-            self.loss = PPOLossKL(self.config)
+            self.loss_surrogate = PPOLossKL(self.config)
         else:
             raise ValueError(f"Loss {self.config.loss_type} not implemented")
 
         self.actor_optimizer = torch.optim.Adam(self.actor.parameters(), lr=3e-4)
         self.critic_optimizer = torch.optim.Adam(self.critic.parameters(), lr=3e-4)
     
+    def train(self):
+        for epoch in range(self.epochs):
+            states, action_distributions, log_probs, rewards, values = self.collect_trajectories()
+            advantages = self.calculate_advantages(rewards, values)
+            self.update_policy(states, action_distributions, log_probs, advantages, rewards, values)
     
+    def collect_trajectories(self):
+        
+        return states, action_distributions, log_probs, rewards, values
+    
+    def calculate_advantages(self, rewards, values, finished_states):
+        '''
+        rewards: rewards for each time step t
+        values: the value function return for each time step t
+        finished_states: if finished_states[t] == 1, it means we are in a finished state, and our reward should be 0
+        '''
+        
+        advantages = torch.zeros_like(rewards, dtype=torch.float32, device=self.config.device)
+        advantage = 0
+        
+        #GAE values rely on future rewards, so we iterate backwards, starting from time T, all the way back to time 0
+        for t in range(self.horizon-2, -1, -1):
+            curr_advantage = rewards[t] + self.discount * values[t+1] * (1-finished_states[t]) - values[t]
+            advantage = curr_advantage + (1 - finished_states[t]) * self.discount * self.gae_value * advantage
+            advantages[t] = advantage
+            
+        return advantages
+    
+    def update_policy(self, states, action_distributions, log_probs, advantages, rewards, values):
+        
+        surrogate_loss = self.loss_surrogate.compute_loss(old_log_probs, log_probs, advantages)
+        value_loss = nn.functional.mse_loss(rewards, values)
+        entropy_loss = -torch.mean(action_distributions.entropy())
+        
+        loss = surrogate_loss - self.c1 * value_loss + -self.c2 * entropy_loss
+        
+        self.actor_optimizer.zero_grad()
+        loss.backward()
+        self.actor_optimizer.step()
+        
+        self.critic_optimizer.zero_grad()
+        value_loss.backward()
+        self.critic_optimizer.step()
 
 
 class PPOTester:
