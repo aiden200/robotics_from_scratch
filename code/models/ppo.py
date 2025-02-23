@@ -179,12 +179,21 @@ class PPOCritic(nn.Module):
     
         
     
-class DummyEnvironment:
+class EnvironmentConnected:
     def __init__(self):
         pass
     
     def get_reward(self, state):
         return 1
+    
+    def reset(self):
+        pass
+    
+    def step(self, action):
+        pass
+        # return new_state, reward, done
+    
+    def
 
 
 class PPOClippedLoss(nn.Module):
@@ -265,7 +274,7 @@ class PPO(nn.Module):
         self.c2 = self.config.c2
         
         if self.config.loss_type == "clipped":
-            self.loss_surrogate = PPOClippedLoss(self.config, self.critic, self.env)
+            self.loss_surrogate = PPOClippedLoss(self.config, self.critic)
         elif self.config.loss_type == "normal":
             self.loss_surrogate = PPOLossNoPenalize(self.config)
         elif self.config.loss_type == "kl_penalized":
@@ -283,8 +292,45 @@ class PPO(nn.Module):
             self.update_policy(states, action_distributions, log_probs, advantages, rewards, values)
     
     def collect_trajectories(self):
+        states, action_distributions, log_probs, rewards, values, dones = [], [], [], [], [], []
+        state = self.env.reset()
+        for t in self.horizon:
+            state_tensor = torch.tensor(state, dtype=torch.float32).to(self.config.device)
+            
+            # sample action from distribution
+            with torch.no_grad():
+                action, log_prob, action_distribution = self.actor(state_tensor)
+            
+            # next_state, reward, done = self.env.step(action)
+            next_state, reward, done = self.env.step(action.cpu().numpy()) # If env is not in GPU
+            
+            # get value for current state
+            with torch.no_grad():
+                value = self.critic(state_tensor)
+            
+            
+            states.append(state)
+            action_distributions.append(action_distribution)
+            log_probs.append(log_prob)
+            rewards.append(reward)
+            values.append(value)
+            dones.append(done)
+            
+            state = next_state
+            
+            # In finish state
+            if done:
+                break
         
-        return states, action_distributions, log_probs, rewards, values
+        
+        return (
+            torch.tensor(states, dtype=torch.float32).to(self.config.device),
+            torch.tensor(action_distributions, dtype=torch.float32).to(self.config.device),
+            torch.tensor(log_probs, dtype=torch.float32).to(self.config.device),
+            torch.tensor(rewards, dtype=torch.float32).to(self.config.device),
+            torch.tensor(values, dtype=torch.float32).to(self.config.device),
+            torch.tensor(dones, dtype=torch.float32).to(self.config.device),
+        )
     
     def calculate_advantages(self, rewards, values, finished_states):
         '''
