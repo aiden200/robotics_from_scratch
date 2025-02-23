@@ -8,8 +8,9 @@
   - Theorem of improving the policy
 - **Paper Implementation: PPO pt 3**
   - I need to study TRPO better to understand what I need to code.
+  - Trajectory generation in dummy environment implemented.
   - Code located in [here](../code/models/ppo.py)
-  - Things left: Environment configuration, loss updates, trajectory generation
+  - Things left: Environment configuration, loss updates
 
 ### **Notes**
 
