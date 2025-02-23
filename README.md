@@ -71,6 +71,7 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 - [x] [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236)
 - [x] [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](https://concept-graphs.github.io/assets/pdf/2023-ConceptGraphs.pdf)
 - [x] [sentdex series](https://www.youtube.com/watch?v=phTnbmXM06g&list=PLQVvvaa0QuDenVbxP4LXYZoGbjfgP-Y5i&index=1)
+- [x] [Trust Region Policy Optimization](https://arxiv.org/pdf/1502.05477)
 - [ ] [DeepMind’s RL for Robotics](https://deepmind.com/research/highlighted-research)
 - [ ] [Sim2Real Transfer in Robotics](https://arxiv.org/abs/1806.06752)
 - [ ] [NVIDIA’s Issac Lab](https://developer.nvidia.com/omniverse)

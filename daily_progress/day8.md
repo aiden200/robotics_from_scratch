@@ -1,4 +1,4 @@
-### **Day 7**
+### **Day 8**
 
 - **PAPER: Deep Q Learning**
   - Deep Q network
