@@ -42,6 +42,8 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 | Day6  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 1<br>**Intro to Robotics**: Relating frames to each other pt 1<br>[Full Notes](daily_progress/day6.md)                                                                                 |
 | Day7  | **PAPER:** Proximal Policy Opyimization Algorithms - Part 2<br>**Code Implementation**: [PPO, part 1](code/models/ppo.py) -> Actor & Config<br>**Intro to Robotics**: Relating frames to each other pt 2<br>[Full Notes](daily_progress/day7.md) |
 | Day8  | **PAPER:** Human-level control through deep reinforcement learning<br>**Code Implementation**: [PPO, part 2](code/models/ppo.py) -> Critic, Clippled Loss, KL divergence coefficient, Action value <br>[Full Notes](daily_progress/day8.md)      |
+| Day9  | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO)<br>**Code Implementation**: [PPO, part 3](code/models/ppo.py) -> Trajectory generation <br>[Full Notes](daily_progress/day9.md)                                                        |
+| Day10 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 2<br>**Intro to Robotics**: Examples of mapping between Kinematic descriptions <br>[Full Notes](daily_progress/day10.md)                                                            |
 
 ## 📂 Project Structure
 
