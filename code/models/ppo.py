@@ -122,9 +122,10 @@ class PPOActor(nn.Module):
             mu = self.mu_head(hidden_states)
             std = torch.exp(self.log_std)
             distribution = torch.distributions.Normal(mu, std)
+            entropy = distribution.entropy().sum(dim=-1)
             action = distribution.sample()
             log_prob = distribution.log_prob(action).sum(dim=-1) # sum over action dimensions
-            return action, log_prob, distribution
+            return action, log_prob, entropy
 
 
 class PPOCritic(nn.Module):
@@ -285,35 +286,48 @@ class PPO(nn.Module):
         self.critic_optimizer = torch.optim.Adam(self.critic.parameters(), lr=3e-4)
     
     def train(self):
+        old_log_probs = None
+        
         for epoch in range(self.epochs):
-            states, action_distributions, log_probs, rewards, values = self.collect_trajectories()
+            states, entropies, log_probs, rewards, values, finished_states = self.collect_trajectories()
+            
+            # Store old log probs before updating policy
+            # .detach() removes the gradient tracking, .clone() avoids in place changes
+            if old_log_probs is None:
+                old_log_probs = log_probs.clone().detach()
+                
             advantages = self.calculate_advantages(rewards, values)
-            self.update_policy(states, action_distributions, log_probs, advantages, rewards, values)
+            
+            self.update_policy(entropies, old_log_probs, log_probs, advantages, rewards, values, finished_states)
+            
+            old_log_probs = log_probs.clone().detach()
     
     def collect_trajectories(self):
-        states, action_distributions, log_probs, rewards, values, dones = [], [], [], [], [], []
+        # Environment interactions should remain on CPU, Actor Critic functions in GPU
+        states, entropies, log_probs, rewards, values, finished_states = [], [], [], [], [], []
         state = self.env.reset()
-        for t in self.horizon:
+        for t in range(self.horizon):
             state_tensor = torch.tensor(state, dtype=torch.float32).to(self.config.device)
             
             # sample action from distribution
             with torch.no_grad():
-                action, log_prob, action_distribution = self.actor(state_tensor)
+                action, log_prob, entropy = self.actor(state_tensor)
             
-            # next_state, reward, done = self.env.step(action)
-            next_state, reward, done = self.env.step(action.cpu().numpy()) # If env is not in GPU
+            
+            next_state, reward, done = self.env.step(action.cpu().numpy()) # If env is on cpu
             
             # get value for current state
             with torch.no_grad():
                 value = self.critic(state_tensor)
             
             
+            
             states.append(state)
-            action_distributions.append(action_distribution)
+            entropies.append(entropy)
             log_probs.append(log_prob)
             rewards.append(reward)
             values.append(value)
-            dones.append(done)
+            finished_states.append((done))
             
             state = next_state
             
@@ -324,11 +338,11 @@ class PPO(nn.Module):
         
         return (
             torch.tensor(states, dtype=torch.float32).to(self.config.device),
-            torch.tensor(action_distributions, dtype=torch.float32).to(self.config.device),
+            torch.tensor(entropies, dtype=torch.float32).to(self.config.device),
             torch.tensor(log_probs, dtype=torch.float32).to(self.config.device),
             torch.tensor(rewards, dtype=torch.float32).to(self.config.device),
             torch.tensor(values, dtype=torch.float32).to(self.config.device),
-            torch.tensor(dones, dtype=torch.float32).to(self.config.device),
+            torch.tensor(finished_states, dtype=torch.float32).to(self.config.device),
         )
     
     def calculate_advantages(self, rewards, values, finished_states):
@@ -349,11 +363,11 @@ class PPO(nn.Module):
             
         return advantages
     
-    def update_policy(self, states, action_distributions, log_probs, advantages, rewards, values):
+    def update_policy(self, entropies, old_log_probs, log_probs, advantages, rewards, values):
         
         surrogate_loss = self.loss_surrogate.compute_loss(old_log_probs, log_probs, advantages)
         value_loss = nn.functional.mse_loss(rewards, values)
-        entropy_loss = -torch.mean(action_distributions.entropy())
+        entropy_loss = -torch.mean(entropies)
         
         loss = surrogate_loss - self.c1 * value_loss + -self.c2 * entropy_loss
         
