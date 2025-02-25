@@ -75,6 +75,8 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 - [x] [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](https://concept-graphs.github.io/assets/pdf/2023-ConceptGraphs.pdf)
 - [x] [sentdex series](https://www.youtube.com/watch?v=phTnbmXM06g&list=PLQVvvaa0QuDenVbxP4LXYZoGbjfgP-Y5i&index=1)
 - [x] [Trust Region Policy Optimization](https://arxiv.org/pdf/1502.05477)
+- [x] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
+- [x] [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)
 - [ ] [DeepMind’s RL for Robotics](https://deepmind.com/research/highlighted-research)
 - [ ] [Sim2Real Transfer in Robotics](https://arxiv.org/abs/1806.06752)
 - [ ] [NVIDIA’s Issac Lab](https://developer.nvidia.com/omniverse)
@@ -90,7 +92,6 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 - [ ] [Introduction to Robotic Simulations in Isaac Sim (Not available yet)](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-03+V1)
 - [ ] [Huggingface RL course](https://huggingface.co/learn/deep-rl-course/)
 - [ ] [Robotics 101](https://www.ubicoders.com/courses/robotics101?kcid=olcewrxmvgmunfiyvlwobogxxuximlvj?utm_soure=1)
-- [ ] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
 - [ ] [Robot dog simulation -> NVIDIA tech. blog](https://developer.nvidia.com/blog/closing-the-sim-to-real-gap-training-spot-quadruped-locomotion-with-nvidia-isaac-lab/)
 
 ## 🏆 Challenges & Next Steps
