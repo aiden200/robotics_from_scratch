@@ -18,7 +18,9 @@ I am well versed in Computer Vision and know some basic RL algorithms like Q-Lea
 
 ## 📈 Progress Tracking
 
-Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The goal is consistent progress, even if some days are slow.
+Check out the [`Daily Progress/`](daily_progress) folder for daily updates. My goal is to maintain **consistent progress**, even on slower days.  
+
+As a **full-time researcher and part-time student**, my progress will be steady but may vary until I complete my degree and my current research. 
 
 ## 🎯 Objectives
 
