@@ -45,6 +45,7 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 | Day9  | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO)<br>**Code Implementation**: [PPO, part 3](code/models/ppo.py) -> Trajectory generation <br>[Full Notes](daily_progress/day9.md)                                                                                                                                                                                                            |
 | Day10 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 2<br>**Intro to Robotics**: Examples of mapping between Kinematic descriptions <br>[Full Notes](daily_progress/day10.md)                                                                                                                                                                                                                |
 | Day11 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 3<br>**TEXTBOOK UPDATE**: Switching textbooks to [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)<br>**Code Implementation**: [PPO, part 4](code/models/ppo.py) -> Loss updates <br>[Full Notes](daily_progress/day11.md) |
+| Day12 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 1<br>**Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Started Cartpole Environment<br>[Full Notes](daily_progress/day12.md)                                                                                                                                   |
 
 ## 📂 Project Structure
 
@@ -75,8 +76,9 @@ Check out the [`Daily Progress/`](daily_progress) folder for daily updates. The 
 - [x] [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](https://concept-graphs.github.io/assets/pdf/2023-ConceptGraphs.pdf)
 - [x] [sentdex series](https://www.youtube.com/watch?v=phTnbmXM06g&list=PLQVvvaa0QuDenVbxP4LXYZoGbjfgP-Y5i&index=1)
 - [x] [Trust Region Policy Optimization](https://arxiv.org/pdf/1502.05477)
+- [ ] [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290)
 - [x] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
-- [x] [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)
+- [ ] [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)
 - [ ] [DeepMind’s RL for Robotics](https://deepmind.com/research/highlighted-research)
 - [ ] [Sim2Real Transfer in Robotics](https://arxiv.org/abs/1806.06752)
 - [ ] [NVIDIA’s Issac Lab](https://developer.nvidia.com/omniverse)
