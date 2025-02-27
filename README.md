@@ -47,7 +47,7 @@ As a **full-time researcher and part-time student**, my progress will be steady 
 | Day9  | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO)<br>**Code Implementation**: [PPO, part 3](code/models/ppo.py) -> Trajectory generation <br>[Full Notes](daily_progress/day9.md)                                                                                                                                                                                                            |
 | Day10 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 2<br>**Intro to Robotics**: Examples of mapping between Kinematic descriptions <br>[Full Notes](daily_progress/day10.md)                                                                                                                                                                                                                |
 | Day11 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 3<br>**TEXTBOOK UPDATE**: Switching textbooks to [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)<br>**Code Implementation**: [PPO, part 4](code/models/ppo.py) -> Loss updates <br>[Full Notes](daily_progress/day11.md) |
-| Day12 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 1<br>**Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Started Cartpole Environment<br>[Full Notes](daily_progress/day12.md)                                                                                                                                   |
+| Day12 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 1<br>**Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Started Omniverse development<br>[Full Notes](daily_progress/day12.md)                                                                                                                                   |
 
 ## 📂 Project Structure
 
@@ -67,6 +67,11 @@ As a **full-time researcher and part-time student**, my progress will be steady 
 │── 📂 docs             # Additional documentation
 └── 📂 experiments      # Experimental setups and results
 ```
+
+## Requirements
+
+Python >= 3.10
+
 
 ## 📚 Resources & Learning Materials
 
