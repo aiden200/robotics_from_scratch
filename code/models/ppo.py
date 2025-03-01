@@ -304,21 +304,22 @@ class PPO(nn.Module):
     
     def collect_trajectories(self):
         # Environment interactions should remain on CPU, Actor Critic functions in GPU
-        states, entropies, log_probs, rewards, values, finished_states = [], [], [], [], [], []
-        state = self.env.reset()
+        states = [self.env.reset() for _ in range(self.config.num_actors)]
+        entropies, log_probs, rewards, values, finished_states = [], [], [], [], []
+        
         for t in range(self.horizon):
-            state_tensor = torch.tensor(state, dtype=torch.float32).to(self.config.device)
+            state_tensors = torch.tensor(states, dtype=torch.float32).to(self.config.device)
             
             # sample action from distribution
             with torch.no_grad():
-                action, log_prob, entropy = self.actor(state_tensor)
+                actions, log_probs, entropies = self.actor(state_tensors)
+                # get value for current state
+                values = self.critic(state_tensors)
             
             
-            next_state, reward, done = self.env.step(action.cpu().numpy()) # If env is on cpu
+            # Environment needs to support multiple action spaces. TODO if not supported
+            next_states, rewards, dones = self.env.step(actions.cpu().numpy()) # If env is on cpu
             
-            # get value for current state
-            with torch.no_grad():
-                value = self.critic(state_tensor)
             
             
             

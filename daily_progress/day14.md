@@ -4,9 +4,9 @@
   - Learning from multiple policies (two Q values)
   - Matching the optimal soft Q-distribution
   - Target network, reward scaling
-- **Paper Implementation: PPO pt 5 / Omniverse Development pt 2**
-  - Started configuring the cartpole environment NVIDIA Omniverse
-  - Got to put actions into cartpoles, now I just need to get a manager configured environment
+- **Paper Implementation: PPO pt 6 / Omniverse Development pt 2**
+  - Started minibatching and supporting multi actors.
+  - This is going to be a bigger pain than what I thought it would be, might take a while.
   - PPO Code located in [here](../code/models/ppo.py)
   - cartpole environment located in [here](../code/environment/cartPole.py)
 

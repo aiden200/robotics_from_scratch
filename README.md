@@ -18,9 +18,9 @@ I am well versed in Computer Vision and know some basic RL algorithms like Q-Lea
 
 ## 📈 Progress Tracking
 
-Check out the [`Daily Progress/`](daily_progress) folder for daily updates. My goal is to maintain **consistent progress**, even on slower days.  
+Check out the [`Daily Progress/`](daily_progress) folder for daily updates. My goal is to maintain **consistent progress**, even on slower days.
 
-As a **full-time researcher and part-time student**, my progress will be steady but may vary until I complete my degree and my current research. 
+As a **full-time researcher and part-time student**, my progress will be steady but may vary until I complete my degree and my current research.
 
 ## 🎯 Objectives
 
@@ -47,8 +47,9 @@ As a **full-time researcher and part-time student**, my progress will be steady 
 | Day9  | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO)<br>**Code Implementation**: [PPO, part 3](code/models/ppo.py) -> Trajectory generation <br>[Full Notes](daily_progress/day9.md)                                                                                                                                                                                                            |
 | Day10 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 2<br>**Intro to Robotics**: Examples of mapping between Kinematic descriptions <br>[Full Notes](daily_progress/day10.md)                                                                                                                                                                                                                |
 | Day11 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 3<br>**TEXTBOOK UPDATE**: Switching textbooks to [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)<br>**Code Implementation**: [PPO, part 4](code/models/ppo.py) -> Loss updates <br>[Full Notes](daily_progress/day11.md) |
-| Day12 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 1<br>**Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Started Omniverse development<br>[Full Notes](daily_progress/day12.md)                                                                                                                                   |
-| Day13 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 2<br>**Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Cartpole simulation up, need to conifgure manager environment<br>[Full Notes](daily_progress/day13.md)                                                                                                                                   |
+| Day12 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 1<br>**Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Started Omniverse development<br>[Full Notes](daily_progress/day12.md)                                                                                                                                  |
+| Day13 | **Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Cartpole simulation up, need to conifgure manager environment<br>[Full Notes](daily_progress/day13.md)                                                                                                                                                                                                                       |
+| Day14 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 2<br>**Code Implementation**: [PPO, part 6](code/environment/cartPole.py) -> Started minibatching and supporting multi actors<br>[Full Notes](daily_progress/day14.md)                                                                                                  |
 
 ## 📂 Project Structure
 
@@ -72,7 +73,6 @@ As a **full-time researcher and part-time student**, my progress will be steady 
 ## Requirements
 
 Python >= 3.10
-
 
 ## 📚 Resources & Learning Materials
 
