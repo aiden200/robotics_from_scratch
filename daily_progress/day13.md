@@ -1,7 +1,5 @@
-### **Day 12**
+### **Day 13**
 
-- **PAPER: Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a STochastic Actor Pt 2**
-  - 
 - **Paper Implementation: PPO pt 5 / Omniverse Development pt 2**
   - Started configuring the cartpole environment NVIDIA Omniverse
   - Got to put actions into cartpoles, now I just need to get a manager configured environment
