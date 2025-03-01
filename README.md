@@ -49,7 +49,7 @@ As a **full-time researcher and part-time student**, my progress will be steady 
 | Day11 | **PAPER:** PAPER: Trust Region Policy Optimization (TRPO) pt 3<br>**TEXTBOOK UPDATE**: Switching textbooks to [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)<br>**Code Implementation**: [PPO, part 4](code/models/ppo.py) -> Loss updates <br>[Full Notes](daily_progress/day11.md) |
 | Day12 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 1<br>**Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Started Omniverse development<br>[Full Notes](daily_progress/day12.md)                                                                                                                                  |
 | Day13 | **Code Implementation**: [PPO, part 5](code/environment/cartPole.py) -> Cartpole simulation up, need to conifgure manager environment<br>[Full Notes](daily_progress/day13.md)                                                                                                                                                                                                                       |
-| Day14 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 2<br>**Code Implementation**: [PPO, part 6](code/environment/cartPole.py) -> Started minibatching and supporting multi actors<br>[Full Notes](daily_progress/day14.md)                                                                                                  |
+| Day14 | **PAPER:** Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor pt 2<br>**Code Implementation**: [PPO, part 6](code/environment/cartPole.py) -> Started minibatching and supporting multi actors<br>[Full Notes](daily_progress/day14.md)                                                                                                               |
 
 ## 📂 Project Structure
 
@@ -84,7 +84,7 @@ Python >= 3.10
 - [x] [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](https://concept-graphs.github.io/assets/pdf/2023-ConceptGraphs.pdf)
 - [x] [sentdex series](https://www.youtube.com/watch?v=phTnbmXM06g&list=PLQVvvaa0QuDenVbxP4LXYZoGbjfgP-Y5i&index=1)
 - [x] [Trust Region Policy Optimization](https://arxiv.org/pdf/1502.05477)
-- [ ] [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290)
+- [x] [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290)
 - [x] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
 - [ ] [NVIDIA ISSAC SIM tutorial](https://docs.omniverse.nvidia.com/isaacsim/latest/core_api_tutorials/tutorial_core_hello_robot.html)
 - [ ] [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)
