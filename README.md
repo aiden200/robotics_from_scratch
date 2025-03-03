@@ -87,6 +87,7 @@ Python >= 3.10
 - [x] [Trust Region Policy Optimization](https://arxiv.org/pdf/1502.05477)
 - [x] [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290)
 - [x] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
+- [ ] [The Difficulty of Passive Learning in Deep Reinforcement Learning](https://arxiv.org/pdf/2110.14020)
 - [ ] [NVIDIA ISSAC SIM tutorial](https://docs.omniverse.nvidia.com/isaacsim/latest/core_api_tutorials/tutorial_core_hello_robot.html)
 - [ ] [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)
 - [ ] [DeepMind’s RL for Robotics](https://deepmind.com/research/highlighted-research)
