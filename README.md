@@ -53,6 +53,7 @@ As a **full-time researcher and part-time student**, my progress will be steady 
 | Day15 | **PAPER:** The Difficulty of Passive Learning in Deep Reinforcement Learning<br>**BOOK:** Probabilistic Robotics -> New Book! Introduction and definitions<br>[Full Notes](daily_progress/day15.md)                                                                                                                                                                                                  |
 | Day16 | **PAPER:** The Difficulty of Passive Learning in Deep Reinforcement Learning pt 2<br>**BOOK:** Probabilistic Robotics ->Probability<br>[Full Notes](daily_progress/day16.md)                                                                                                                                                                                                                         |
 | Day17 | **PAPER:** The Difficulty of Passive Learning in Deep Reinforcement Learning pt 3<br>**BOOK:** Probabilistic Robotics ->Robot environment interaction definitions<br>[Full Notes](daily_progress/day17.md)                                                                                                                                                                                           |
+| Day18 | **PAPER:** The Difficulty of Passive Learning in Deep Reinforcement Learning pt 4<br>**BOOK:** Probabilistic Robotics ->Bayes filtering<br>[Full Notes](daily_progress/day18.md)                                                                                                                                                                                                                     |
 
 ## 📂 Project Structure
 
@@ -79,7 +80,7 @@ Python >= 3.10
 
 ## 📚 Resources & Learning Materials
 
-### Tutorials I want to go through
+### Papers:
 
 - [x] [Continous Control with Deep Reinforcement Learning](https://arxiv.org/pdf/1509.02971)
 - [x] [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)
@@ -89,17 +90,23 @@ Python >= 3.10
 - [x] [Trust Region Policy Optimization](https://arxiv.org/pdf/1502.05477)
 - [x] [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290)
 - [x] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
-- [ ] [The Difficulty of Passive Learning in Deep Reinforcement Learning](https://arxiv.org/pdf/2110.14020)
+- [x] [The Difficulty of Passive Learning in Deep Reinforcement Learning](https://arxiv.org/pdf/2110.14020)
+- [ ] [DEMO^3 Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy, and World Model Learning](https://arxiv.org/pdf/2503.01837)
+- [ ] [Deep Reinforcement Learning with Double Q-Learning](https://users.soe.ucsc.edu/~pang/200/f18/papers/2018/12389-55999-1-PB.pdf)
+- [ ] [DREAM TO CONTROL: LEARNING BEHAVIORS BY LATENT IMAGINATION](https://arxiv.org/pdf/1912.01603)
+- [ ] [Mastering the game of Go with deep neural networks and tree search](https://papoef.wordpress.com/wp-content/uploads/2016/05/nature16961-copy.pdf)
+- [ ] [Mastering Diverse Domains through World Models](https://arxiv.org/pdf/2301.04104)
+- [ ] [Mastering the game of Go without human knowledge](https://www.nature.com/articles/nature24270)
+- [ ] [A Distributional Perspective on Reinforcement Learning](https://proceedings.mlr.press/v70/bellemare17a/bellemare17a.pdf)
+- [ ] [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](https://arxiv.org/pdf/2109.11978)
+- [ ] [Sim2Real Transfer in Robotics](https://arxiv.org/abs/1806.06752)
+
+### Tutorials:
+
 - [ ] [NVIDIA ISSAC SIM tutorial](https://docs.omniverse.nvidia.com/isaacsim/latest/core_api_tutorials/tutorial_core_hello_robot.html)
 - [ ] [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://books.google.com/books/about/Probabilistic_Robotics.html?id=2Zn6AQAAQBAJ)
-- [ ] [DeepMind’s RL for Robotics](https://deepmind.com/research/highlighted-research)
-- [ ] [Sim2Real Transfer in Robotics](https://arxiv.org/abs/1806.06752)
 - [ ] [Visual and LIDAR based SLAM with ROS using Bittle and Raspberry Pi](https://www.youtube.com/watch?v=uXpQUIF_Jyk&list=PL5efXgSvwk9X8wQuiI_fomlSznZc-jShC)
-- [ ] [Arduino Machine Learning Tutorial: Introduction to TinyML with Wio Terminal](https://www.youtube.com/watch?v=iCmlKyAp8eQ&list=PL5efXgSvwk9UCtJ6JKTyWAccSVfTXSlA3)
-- [ ] [NVIDIA Isaac Gym & RL](https://developer.nvidia.com/isaac-gym)
 - [ ] [Berkeley Humanoid Traning Code](https://github.com/HybridRobotics/isaac_berkeley_humanoid)
-- [ ] [Eurekaverse](https://eureka-research.github.io/eurekaverse/)
-- [ ] [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](https://arxiv.org/pdf/2109.11978)
 - [ ] [Transferring Robot Learning Policies From Simulation to Reality](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-28+V1)
 - [ ] [Introduction to Robotic Simulations in Isaac Sim (Not available yet)](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-03+V1)
 - [ ] [Huggingface RL course](https://huggingface.co/learn/deep-rl-course/)
