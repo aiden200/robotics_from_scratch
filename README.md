@@ -56,6 +56,7 @@ As a **full-time researcher and part-time student**, my progress will be steady 
 | Day18 | **PAPER:** The Difficulty of Passive Learning in Deep Reinforcement Learning pt 4<br>**BOOK:** Probabilistic Robotics ->Bayes filtering<br>[Full Notes](daily_progress/day18.md)                                                                                                                                                                                                                     |
 | Day19 | **PAPER:** Deep Reinforcement Learning with Double Q-Learning Pt.1<br>**BOOK:** Probabilistic Robotics ->Markov Assumption, Gaussian Filters<br>[Full Notes](daily_progress/day19.md)                                                                                                                                                                                                                |
 | Day20 | **Notetaking Update** content notes & reflective notes<br>**PAPER:** Deep Reinforcement Learning with Double Q-Learning Pt.2<br>**BOOK:** Probabilistic Robotics ->Kalman Filters, Beliefs as linear Gaussian Distributions<br>[Full Notes](daily_progress/day20.md)                                                                                                                                 |
+| Day21 | **PAPER:** Deep Reinforcement Learning with Double Q-Learning Pt.3<br>**BOOK:** Probabilistic Robotics ->EKFs,Linearization with Taylor expansion<br>[Full Notes](daily_progress/day21.md)                                                                                                                                                                                                           |
 
 ## 📂 Project Structure
 
@@ -93,8 +94,8 @@ Python >= 3.10
 - [x] [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290)
 - [x] [Introduction to Robotics by John J. Craig](https://marsuniversity.github.io/ece387/Introduction-to-Robotics-Craig.pdf)
 - [x] [The Difficulty of Passive Learning in Deep Reinforcement Learning](https://arxiv.org/pdf/2110.14020)
+- [x] [Deep Reinforcement Learning with Double Q-Learning](https://users.soe.ucsc.edu/~pang/200/f18/papers/2018/12389-55999-1-PB.pdf)
 - [ ] [DEMO^3 Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy, and World Model Learning](https://arxiv.org/pdf/2503.01837)
-- [ ] [Deep Reinforcement Learning with Double Q-Learning](https://users.soe.ucsc.edu/~pang/200/f18/papers/2018/12389-55999-1-PB.pdf)
 - [ ] [DREAM TO CONTROL: LEARNING BEHAVIORS BY LATENT IMAGINATION](https://arxiv.org/pdf/1912.01603)
 - [ ] [Mastering the game of Go with deep neural networks and tree search](https://papoef.wordpress.com/wp-content/uploads/2016/05/nature16961-copy.pdf)
 - [ ] [Mastering Diverse Domains through World Models](https://arxiv.org/pdf/2301.04104)
